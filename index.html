@@ -17,6 +17,16 @@
   <a class="instruction"
       href="https://en.wikipedia.org/wiki/Rock_paper_scissors">RULES</a>
       <script>
+          /*i found the speech code at the following url
+          i wrapped into a function*/
+
+          function say(myMessage) {
+          var msg = new SpeechSynthesisUtterance(myMessage);
+          window.speechSynthesis.speak(msg);
+          }
+
+
+
         /* This is a simplified version of the game.
         The Computer ALWAYS picks ROCK.  
         Does the user's choose win,lose, or tie vs ROCK? */
@@ -31,7 +41,9 @@
             if (user === 'scissors') {
                 result = "lose";
             }
-            alert("Computer chose rock, you " + result + "!");
+            var themessage = "Computer chose rock, you" + result + "!"
+            alert(theMessage);
+            say(theMessage);
         }
       </script>
 
