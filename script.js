@@ -22,7 +22,7 @@
             if (user === 'scissors') {
                 result = "lose";
             }
-            var themessage = "Computer chose rock, you" + result + "!";
+            var theMessage = "Computer chose rock, you" + result + "!";
             alert(theMessage);
             say(theMessage);
         }
